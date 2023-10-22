@@ -38,16 +38,31 @@ fun main(){
 
 
 
-    var pokemonDefault = Pokemon()
-    println(pokemonDefault.ataques)
+//    var pokemonDefault = Pokemon()
+//    println(pokemonDefault.ataques)
+//
+//    pokemonDefault.ataques = mutableListOf(
+//        Ataque("Impactrueno", "Electrico", 40),
+//        Ataque("Rayo", "Electrico", 90),
+//        Ataque("Placaje", "Normal", 40)
+//    )
+//
+//    println(pokemonDefault.ataques)
 
-    pokemonDefault.ataques = mutableListOf(
+
+
+    var pokemonDefault = Pokemon()
+
+    pokemonDefault.asignarAtaques(mutableListOf(
         Ataque("Impactrueno", "Electrico", 40),
         Ataque("Rayo", "Electrico", 90),
         Ataque("Placaje", "Normal", 40)
-    )
+    ))
+    println(pokemonDefault.obtenerAtaques())
 
-    println(pokemonDefault.ataques)
+
+
+
 
 
 
