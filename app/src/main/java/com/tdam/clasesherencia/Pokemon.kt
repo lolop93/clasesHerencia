@@ -1,8 +1,19 @@
 package com.tdam.clasesherencia
 
-class Pokemon(var nombre:String, var tipo:String = "Normal", var nivel:Int = 1) {
+open class Pokemon(private var _nombre:String, var tipo:String = "Normal", var nivel:Int = 1) {
 
     var ataques : MutableList<Ataque>
+
+    var nombre: String = _nombre
+        get() = field
+        set(value) {
+            field = value
+        }
+    var felicidad: Float = 0.0f
+        get() = field
+        set(value) {
+            field = value
+        }
 
     init {
         ataques = mutableListOf()
@@ -33,9 +44,9 @@ class Pokemon(var nombre:String, var tipo:String = "Normal", var nivel:Int = 1) 
         this.ataques = ataques
     }
 
-    fun setAtaques(ataques: MutableList<Ataque>){
-        this.ataques = ataques
-    }
+//    fun setAtaques(ataques: MutableList<Ataque>){
+//        this.ataques = ataques
+//    }
 
 
 

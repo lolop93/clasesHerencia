@@ -1,5 +1,11 @@
 package com.tdam.clasesherencia
 
+const val PI = 3.1416
+
+//podemos hacer privada las constantes
+
+private const val PI_privado = 3.1416
+
 fun main(){
 
 //    var pokemon1 = Pokemon("Pikachu")
@@ -59,6 +65,12 @@ fun main(){
         Ataque("Placaje", "Normal", 40)
     ))
     println(pokemonDefault.obtenerAtaques())
+
+
+
+    //Llamamos a los set y get de felicidad
+    pokemonDefault.felicidad = 0.5f
+    println(pokemonDefault.felicidad)
 
 
 
