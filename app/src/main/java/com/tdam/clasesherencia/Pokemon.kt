@@ -3,6 +3,7 @@ package com.tdam.clasesherencia
 open class Pokemon(private var _nombre:String, var tipo:String = "Normal", var nivel:Int = 1) {
 
     var ataques : MutableList<Ataque>
+    var tipo2 : TypePokemon = TypePokemon.ELECTRICO //por default es electrico
 
     var nombre: String = _nombre
         get() = field
@@ -53,6 +54,12 @@ open class Pokemon(private var _nombre:String, var tipo:String = "Normal", var n
     override fun toString(): String {
         return "Pokemon(nombre='$nombre', tipo='$tipo', nivel=$nivel)"
     }
+
+    fun setTipo2(tipo: TypePokemon){ //le pasamos un enum de tipo TypePokemon
+        this.tipo2 = tipo
+    }
+
+
 
 
 }

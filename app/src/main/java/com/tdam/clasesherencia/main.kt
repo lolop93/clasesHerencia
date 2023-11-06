@@ -73,6 +73,10 @@ fun main(){
     println(pokemonDefault.felicidad)
 
 
+    //Enum
+    pokemonDefault.setTipo2(TypePokemon.AGUA)
+
+
 
 
 
