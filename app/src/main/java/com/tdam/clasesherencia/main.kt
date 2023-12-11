@@ -57,31 +57,10 @@ fun main(){
 
 
 
-    var pokemonDefault = Pokemon()
-
-    pokemonDefault.asignarAtaques(mutableListOf(
-        Ataque("Impactrueno", "Electrico", 40),
-        Ataque("Rayo", "Electrico", 90),
-        Ataque("Placaje", "Normal", 40)
-    ))
-    println(pokemonDefault.obtenerAtaques())
 
 
 
-    //Llamamos a los set y get de felicidad
-    pokemonDefault.felicidad = 0.5f
-    println(pokemonDefault.felicidad)
 
-
-    //Enum
-    pokemonDefault.setTipo2(TypePokemon.AGUA)
-
-
-    //comentario
-
-
-
-    //fsdsgfrdetgredg
 
 
 
