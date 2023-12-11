@@ -77,6 +77,9 @@ fun main(){
     pokemonDefault.setTipo2(TypePokemon.AGUA)
 
 
+    //comentario
+
+
 
 
 
